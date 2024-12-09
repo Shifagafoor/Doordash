@@ -1,0 +1,3072 @@
+@font-face { font-family: "TT Norms"; 
+        src: url("https://typography.doordash.com/TTNorms-Bold.woff2") 
+        format("woff2"), url("https://typography.doordash.com/TTNorms-Bold.woff") 
+        format("woff"), url("https://typography.doordash.com/TTNorms-Bold.ttf") 
+        format("truetype"), url("https://typography.doordash.com/TTNorms-Bold.eot?#iefix") 
+        format("embedded-opentype");  
+}
+
+@font-face { font-family: "TT Norms M"; 
+        src: url("https://typography.doordash.com/TTNorms-Medium.woff2")
+        format("woff2"), url("https://typography.doordash.com/TTNorms-Medium.woff")
+        format("woff"), url("https://typography.doordash.com/TTNorms-Medium.ttf") 
+        format("truetype"), url("https://typography.doordash.com/TTNorms-Medium.eot?#iefix") 
+        format("embedded-opentype");
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: var(--door-fmedian);
+    cursor: pointer;
+}
+h2,h1,h3,p{
+    padding: 0;
+    margin: 0;
+}
+
+.disc_over{
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+
+.leg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    margin-top: 14px;
+}
+h1{
+    margin:40px 20px 20px 20px ;
+    font-family: var(--door-font);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: center;
+}
+:root{
+    --door-color: #eb1700ff;
+    --door-font: "TT Norms";
+    --door-fmedian:"TT Norms M";
+    --yellow:#ebb11eff;
+    --back-color: #FEF1EE;
+}
+header{
+    width: 100%;
+    background-color: white;
+}
+
+.log_in{
+    margin-top: 16px;
+    height: 64px;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto 1fr auto;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    column-gap:8px;
+    padding: 8px;
+    max-width: 100%;
+    position :relative;
+}
+.stars{
+    display:flex;
+}
+.stars div{
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+.stars div svg:not(:first-child){
+    margin:0px 1px;
+}
+.stars div svg:first-child{
+    margin:0px 1px 0px 4px;
+}
+.stars div:last-child{
+    margin-left: 5px;
+}
+#stars{
+    background-color: white;
+    
+}
+#stars ul{
+    padding-left: 0px;
+    color: #606060ff;
+    list-style-type: none;  
+    font-family: var(--door-fmedian);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.01px;
+    display: block;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 0px;
+}
+
+#stars ul li:first-child{
+    color:#191919ff;
+    font-family: var(--door-font);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: -0.01px;
+    display: block;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+#stars ul li:not(:last-child){
+    padding-left: 2px;
+}
+
+#symbol{
+    flex-grow: 0;
+    background-color: white;
+    align-self: center;
+}
+#symbol div{
+    border:1px solid #f1f1f1ff;
+    border-radius: 12px;
+    box-sizing: border-box;
+    height: 62px;
+    width: 62px;
+}
+#symbol div svg{
+    height: 62px;
+    width: 62px; 
+}
+#stars{
+    background-color: white;
+}
+#buttons{
+    flex-grow: 0;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+#buttons span{
+    color: white;
+    background-color: var(--door-color);
+    border-color: var(--door-color);
+    border-radius: 20px;
+    font-family: var(--door-font);
+    padding:0px 12px;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height:32px;
+    margin-top: 1px;
+}
+
+
+.doordash_body{
+    background-image: url(https://img.cdn4dd.com/cdn-cgi/image/fit=cover,format=auto,quality=60/https://cdn.doordash.com/managed/consumer/seo/home/hero_v3/hero_mobile.png);
+    height: 550px;
+    padding: 0px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.discover{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: var(--door-font);
+    word-spacing: -0.01px;
+    font-weight: 700;
+    text-align: center;
+    max-width: 750px;
+    box-sizing: border-box;
+}
+.discover h1{
+    display: flex;
+    max-width: 350px;
+    max-height: 56px;
+    font-size: 22px;
+    line-height: 28px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 6px 0px 26px 0px;
+    margin: 0px;
+    min-height: 67px;
+    box-sizing: border-box;
+}
+.doordash_main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.section_1{
+    flex-grow: 1.4;
+    flex-direction: column;
+    align-items:center;
+    justify-items: center;
+    width: 100%;
+}
+
+.nav_tools{
+    display: none;
+    background-color: white;
+    padding: 15px 47px;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    margin: 0;
+    padding: sticky;
+    width: 100%;
+    z-index: 2;
+
+}
+.sign_in{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;  
+    white-space: nowrap;
+    flex-grow: 1;
+}
+.sign_in#do3{
+    padding: 10px;
+    background-color: var(--door-color);
+    color: white;
+    border-radius: 40px;
+    font-family: var(--door-font);
+}
+.sign_in#do4{
+    padding: 10px;
+    background-color: white;
+    color:var(--door-color);
+    border-radius: 40px;
+    font-family: var(--door-font);
+}
+.gap{
+    flex-grow: 10;
+}
+.doordash_icon{
+    padding: 0px 10px;
+}
+
+.first-hide{
+    display: none;
+}
+.continue{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#button2{
+    flex-grow: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    height: 32px;
+    max-width: 100%;
+}
+#button2 div{
+    color: white;
+    background-color: var(--door-color);
+    border-color: var(--door-color);
+    border-radius: 20px;
+    font-family: var(--door-font);
+    padding:8px 12px;
+    justify-content: center;
+    align-items: center;
+    display: flex; 
+    flex-flow: column;  
+}
+.favicon_one{
+    height:18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    margin: 20px 0px;
+}
+.favicon_one div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.door_door_dash{
+    box-sizing: border-box;
+}
+.in{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.hide{
+    display: flex;
+    margin: 20px;
+    margin-bottom: 0px;
+    background:whitesmoke;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #f1f1f1ff;
+}
+.hide_2{
+    display: flex;
+    margin: 20px;
+    margin-bottom: 0px;
+    flex-direction: column;
+    background:whitesmoke;
+    width:100%px;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #f1f1f1ff;
+}
+.major_h{
+    display: flex;
+    flex-direction: row;
+}
+.major_h ul{
+    margin: 0px;
+    list-style-type: none;
+    padding: 0px 8px;
+}
+
+.fast ul li:first-child{
+    color:#191919ff;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: -0.01px;
+    font-weight:700;
+    font-family: var(--door-font);
+}
+.fast ul li{
+    color:#606060ff;
+    margin-top: 2px;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.01px;
+    font-weight:500;
+    font-family: var(--door-fmedian);
+}
+.fast ul li:nth-child(2){
+    padding-left: 4px;
+    margin-bottom: 0px;
+}
+.icon_hide{
+    padding: 8px;
+    border-radius: 12px;
+    border: 1px solid #edecec;
+    background-color: white;
+    height: 42px;
+    width: 42px;
+}
+.flex_icon{
+    display: flex;
+    flex-direction: column;
+}
+.flex_icon h1{
+    font-size: 18px;
+    display: block;
+    font-weight: 700;
+    box-sizing: border-box;
+    font-family: var(--door-font);
+    margin-bottom: 4px;
+    margin: 0px;
+    text-align: left;
+}
+
+.flex_icon h2{
+    font-size: 14px;
+    display: block;
+    color: #606060;
+    margin: 0px;
+    margin-bottom: 4px;
+    font-weight: 500;
+    box-sizing: border-box;
+    font-family: var(--door-fmedian);
+}
+.flex_icon{
+    padding: 4px;
+}
+.app p{
+    padding: 5px 0px;
+    margin: 0px;
+    display: block;
+    margin-right: 4px;
+}
+.app{
+    background-color: var(--door-color);
+    border-radius: 99px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+    font-family: var(--door-font);
+    font-size: 14px;
+    box-sizing: border-box;
+    height: 32px;
+    padding: 0px 12px;
+}
+.blank{
+    flex-grow: 1;
+}
+.search{
+    display: flex;
+    height: 56px;
+    box-sizing: border-box;
+}
+.search_up{
+    display: flex;
+    max-width:100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--door-font);
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+.search_two #location{
+    display: none;
+}
+.search_two{
+    font-family: var(--door-fmedian);
+    min-height: 52px;
+    min-width: 297px;
+    color: #6a6a6a;
+    font-size:16px;
+    text-overflow: ellipsis;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 32px;
+    padding: 6px 16px;
+    box-sizing: border-box;
+}
+.search_two div{
+    justify-content: center;
+    font-family: var(--door-font);
+    line-height: 22px;
+    background-color: white;
+    white-space: nowrap;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.search_two div p{
+    margin: 0px;
+    margin-right: 12px;
+    font-size:16px;
+    font-weight: 500;
+    line-height: 22px;
+    font-family: var(--door-fmedian);
+    padding-bottom: 1px;
+}
+.three{
+    margin-right: 12px;
+    max-width: 100%;
+    flex-grow: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 0;
+    margin-bottom: 1px;
+}
+.p{
+    flex-grow:0;
+}
+#set{
+    margin-right: 7px;
+    margin-bottom: 1px;
+}
+.set{
+    background-color: var(--door-color);
+    border-radius: 30px;
+    color:black;
+    flex-grow:1;
+}
+#serc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.serc{
+    display: flex;
+    background-color: white;
+    border-radius: 60px;
+    padding:0px 12px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+    height:32px;
+    box-sizing: border-box;
+    box-shadow:0px 2px 8px 0px #19191933;
+}
+.serc div{
+    display: flex;
+}
+
+.serc #login{
+    display: none;
+}
+.crave2 .mobile{
+    height: 180px;
+    width: 100%;
+}
+.crave{
+    width: 100%;
+    box-sizing: border-box;
+}
+.crave2{
+    margin-top: 40px;
+    width: 100%;
+}
+.crave #up{
+    margin-top: -110px;
+    box-sizing: border-box;
+    object-position: center;
+    object-fit: cover;
+    height: 180px;
+    width: 100%;
+}
+.crave div img{
+    object-fit: cover;
+    box-sizing: border-box;
+    vertical-align: bottom;
+    object-position: bottom;
+    overflow-clip-margin :content-box;
+    overflow-x: clip;
+    overflow-y :clip;
+    height: 100%;
+    width: 100%;
+}
+
+.two2{
+    margin-top: 80px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FEF1EE;
+}
+.two3{
+    margin-top:0px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FEF1EE;
+}
+.teddy{
+    width:100%;
+    height: 180px;
+    overflow-y: clip;
+    object-fit: cover;
+}
+#upp{
+    margin-top: -100px;
+}
+.flexer{
+    display: flex;
+    flex-direction: column;  
+    background-color: #FEF1EE; 
+}
+.color {
+    background: #fef1ee;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+}
+
+.color2 {
+    background: #fef1ee;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px 0px 0px 0px;
+    align-items: center;
+}
+
+.flex-wrap {
+    position: relative; /* Changed from fixed to relative for better scrolling */
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    overflow-y: hidden; /* Prevent vertical overflow */
+    box-sizing: border-box;
+    width: 100%;
+    max-height: 100%;
+    scrollbar-width: none;/* Smooth scrolling on iOS */
+}
+#yhn{
+    margin-left: 30px;
+}
+.uio .mobster{
+    padding: 10px;
+    box-sizing: border-box;
+}
+.uio{
+    margin-left: 5%;
+    margin-right: -10%;
+    padding: 20px 2px 20px;
+
+}
+.mobster h2{
+    margin: 20px 30px 0px;
+}
+.mobster p{
+    text-align: center;
+    padding: 5px;
+}
+.mobster span{
+    margin-top: 10px;
+}
+.flex-wrap div{
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 90%;
+    box-sizing: border-box;
+}
+.flex-wrap .uio div{
+    padding: 0px;
+    max-width: 100%;
+}
+.flex-wrap img {
+    object-fit: cover;
+    height: 180px;
+    width: 100%;
+}
+.flex-wrap div h2{
+    font-family: var(--door-font);
+    font-weight: 700;
+    line-height: 28px;
+    margin-bottom: 0px;
+    font-size: 24px;
+    white-space: wrap;
+    box-sizing: border-box;
+    text-align:center;
+}
+.flex-wrap div p{
+    font-family: var(--door-fmedian);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: center;
+    margin: 10px 10px 0px;
+    padding-bottom: 0px;
+}
+.flex-wrap div span{
+    font-family: var(--door-font);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+}
+.mink{
+    margin-top: -1%;
+}
+.title{
+    padding:0px;
+    padding-bottom: 40px;
+    margin: 0px;
+}
+.specs img{
+    height: 180px;
+    width: 100%;
+    object-fit: cover;
+}
+.flexer h2{
+    text-align: left;
+    max-width: 90%;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    color:#191919ff;
+    font-family: var(--door-font);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: -0.01px;
+}
+#one01{
+    margin-top: 0px;
+}
+#qwer{
+    padding-top: 4px;
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+.flexer span{
+    text-align: left;
+    margin-top: 10px;
+    color:#191919ff;
+    font-family: var(--door-font);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: -0.01px;
+}
+.flexer p{
+    text-align: left;
+    margin-top: 10px;
+    color:#191919ff;
+    font-family: var(--door-fmedian);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.01px;
+}
+#flexer{
+    margin-bottom: 10px;
+}
+.cherry{
+    display: flex;
+    box-sizing: border-box;
+    background-color: var(--door-color);
+    border-radius: 99px;
+    cursor:pointer;
+    height: 32px;
+    padding: 0px 12px;
+    margin:10px 0px 0px 0px;
+    align-items: center;
+    justify-content: center;
+}
+.cherry p{
+    display: flex;
+    align-content: center;   
+}
+.flexer div span{
+    color: white;
+    background-color: var(--door-color);
+    font-family: var(--door-font);
+    font-size:14px;
+    font-weight:700;
+    line-height:20px; 
+    padding:6px  12px;
+    height: 32px;
+    border-radius: 99px;  
+    justify-content: center;
+}
+.felix{
+    display: flex;
+}
+.tab{
+    display: none;
+}
+
+#flow{
+    background-color: white;
+}
+.shirt{
+    display: flex;
+    flex-direction: column;
+}
+
+.first{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin:40px 0px 0px 0px;
+    padding: 8px 8px 0px 8px;
+    max-height: 100%;
+    max-width: 768px;
+    box-sizing: border-box;
+    width: 418px;
+}
+
+.comp{
+    display: none;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+    padding: 16px;
+}
+#von{
+    margin-bottom: 40px;
+    padding-bottom: 24px;
+}
+.flex h2{
+    font-family: var(--door-font);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    margin: 0px;
+}
+.flex h3{
+    font-family: var(--door-fmedian);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    display: block;
+    text-align: left;
+    margin-top: 0px;
+}
+
+
+.flex span{
+    font-family: var(--door-font);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    color:var(--door-color);
+}
+.flex div img{
+    height: 88px;
+    width: 88px;
+}
+.start{
+    display: flex;
+    margin-top: 12px;
+}
+.start div{
+    display: flex;
+    align-items: center;
+    padding-left: 4px;
+}
+.help{
+    text-align: center;
+    max-width: 300px;
+    color: #191919ff;
+    font-family: var(--door-font);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    padding:40px 20px 20px 20px;
+}
+.monk{
+    margin-top: -50px;
+}
+section{
+    margin: 0;
+}
+.small_nav{
+    width: 100%;
+    display: flex;
+    margin-top: 15px;
+    padding-right: 24px;
+    box-sizing: border-box;
+}
+.small_nav div{
+    height: 32px;
+    padding: 0px 12px;
+    font-family:var(--door-font);
+    font-size: 16px;
+    font-weight: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 99px;
+}
+.small_nav #p1{
+    background-color: white;
+    color: black;
+    margin-right: 8px;
+}
+.small_nav #p2{
+    background-color: var(--door-color);
+    color: white;
+}
+.doordash_main.small_nav{
+    position: relative;
+    display: none;
+    white-space: nowrap;
+    color: white;
+    background-color: white;
+    width: 100%;
+    color:white;
+}
+.doordash_main.small_nav div{
+    background-color: wheat;
+    z-index: 1;
+}
+
+.cherries{
+    background: url(https://img.cdn4dd.com/cdn-cgi/image/fit=cover,format=auto,quality=60/https://cdn.doordash.com/managed/consumer/seo/home/landing_cta/grocery_desktop.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    height: 350px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.blackberry{
+    background-color:rgba(30, 30, 30, 0.6);
+    height: 100%;
+    width: 100%;
+}
+.flexer h2{
+    margin: 20px 0px 0px 0px;
+    font-family: var(--door-font);
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+}
+.link div{
+    margin-top: 20px;
+}
+.cherries div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cherries h2{
+    text-align: center;
+    color: white;
+    filter:drop-shadow(rgba(0, 0, 0, 0.2) 0px 2px 8px);
+    max-width:90%;
+    margin-top: 20px;
+    font-family: var(--door-font);
+    font-size: 24px;
+    font-weight:700;
+    line-height: 28px;
+}
+
+.cherries span{
+    text-align: center;
+    color: white;
+    filter:drop-shadow(rgba(0, 0, 0, 0.2) 0px 2px 8px);
+    margin-top: 10px;
+    font-family: var(--door-font);
+    font-size: 18px;
+    font-weight:700;
+    line-height: 22px;
+}
+.cherries p{
+    text-align: center;
+    color: white;
+    filter:drop-shadow(rgba(0, 0, 0, 0.2) 0px 2px 8px);
+    margin-top: 10px;
+    font-family: var(--door-font);
+    font-size: 14px;
+    font-weight:500;
+    line-height: 20px;
+}
+.kind{
+    display: flex;
+    flex-direction: column;
+}
+.grey{
+    display: flex;
+    flex-direction: column;
+}
+.sign1{
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing :-0.01px;
+    line-height :22px;
+    background-color: var(--door-color);
+}
+.sign2{
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing :-0.01px;
+    line-height :22px;
+    color: #6a6a6a;
+    background: white;
+}
+#aleena{
+    font-size: 16px;
+    font-family: var(--door-fmedian);
+    font-weight: 500;
+    line-height: 22px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.aria h2{
+    text-align: left;
+
+}
+.aria p{
+    margin-top: 10px;
+}
+
+.sis{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+.phone{
+    display: flex;
+    flex-direction: column;
+}
+
+#signin{
+    font-family: var(--door-font);
+    font-size:14px;
+    font-weight: 700;
+    line-height: 20px;
+    padding-left: 2px;
+    margin-bottom: 1px;
+}
+.doordash_top_2{
+    display: none;
+}
+.doordash_top{
+    display: none;
+}
+footer{
+    background-color:#191919;
+    color: #fff;
+    font-family: var(--door-fmedian);
+    display: flex;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: -0.01px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0px 32px 0px;
+    margin-top: -3px;
+}
+.polite .skirt{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+footer div{
+    white-space: nowrap;
+}
+.shoe{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12px;
+}
+#share{
+    margin-left: 16px;
+}
+#down{
+    margin-bottom:-4px;
+}
+#share.step{
+    margin:0px;
+}
+.shoe div:not(:first-child){
+    padding-left: 16px;
+    white-space: nowrap;
+}
+.polite .black{
+    background-color:#191919;
+    color:rgb(196, 196, 196);
+    font-family: var(--door-fmedian);
+    line-height: 20px;
+    box-sizing: border-box;
+    border-color: #191919;
+    text-align: center;
+    font-size:14px;
+    max-width: 100%;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px;
+}
+
+.black h2{
+    color:white;
+    font-family: var(--door-fmedian);
+    line-height: 20px;
+    text-align: center;
+    font-size:14px;
+    font-weight: 500;
+    padding: 10px;
+    margin: 0px;
+} 
+
+#black-h2{
+    margin:0px;
+    margin-top:27px;
+}
+#black-ul{
+    padding: 0px;
+    color: #c4c4c4;   
+    margin-bottom:32px ;
+    flex-direction: column; 
+}
+.polite{
+    margin: 48px 0px 0px 0px;
+    border-color: #191919;
+}
+#breaker{
+    margin-bottom: 20px;
+}
+.polite h2{
+    margin: 20px;
+    white-space: nowrap;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    text-align: center;
+    font-family: var(--door-font);
+}
+.polite div{
+    display: flex;
+    white-space: nowrap;
+    justify-content: center;
+    padding:5px 0px;
+}
+.please{
+    display: flex;
+    width: 100%;
+}
+.blackier{
+    display: flex;
+    flex-direction: column;
+}
+.please div{
+    display: flex;
+    border-bottom: 2px solid #f0f0f0;
+    color: #606060;
+    font-family: var(--door-fmedian);
+    height: 40px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.please div p{
+    display: block;
+}
+.please div:first-child{
+    border-bottom: 2.4px solid #606060;
+    color: #191919;
+    font-weight: 700;
+    font-family: var(--door-font)
+}
+.polite ul li{
+    list-style-type: none;
+}
+
+.box{
+    background-color: rgb(255 255 255 / 15%);
+    border-radius: 8px;
+}
+.add{
+    margin: 20px ;
+}
+.add p{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #191919;
+}
+#bbb{
+    margin: 0px;
+    padding:0px;
+    display: flex;
+    padding:2px 8px;
+    justify-self: center;
+    align-self: center;
+}
+#bbb2{
+    margin: 0px;
+    padding:2px 8px;
+    justify-self: center;
+    align-self: center;
+    display: block;
+    margin-top: 12px;
+}
+.polite .pants{
+    flex-direction: column;
+    padding: 0px;
+}
+#two01{
+    padding-top: 4px;
+}
+
+.stair{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px 40px;
+    color: #c4c4c4;
+}
+.red{
+    border: none;
+    display: inline-block;
+    background-color: var(--door-color);
+    padding: 0px 12px;
+    border-radius: 99px;
+    height: 32px;
+    color:white;
+    align-content: center;
+    box-sizing: border-box;
+    border-color: var(--door-color);
+    text-decoration: none;
+    margin-top: 20px;
+}
+.continue_app{
+    display: flex;
+    box-sizing: border-box;
+    background-color: var(--door-color);
+    color:white;
+    width: 100%;
+    border-radius:90px;
+    min-height: 40px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+    font-family: var(--door-font);
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 700;
+    letter-spacing: -0.01px;
+}
+.red2{
+    display: flex;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    background-color: var(--door-color);
+    color:white;
+    max-width: 100%;
+    width: fit-content;
+    border-radius:90px;
+    min-height: 32px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    position: relative;
+    text-align: left;
+}
+.red2 span{
+    display: block;
+    width: 100%;
+    flex-grow: 1;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: var(--door-font);
+    line-height: 20px;
+    padding: 0px 12px;
+}
+#in{
+    display: none;
+}
+.black .sister{
+    padding-top: 32px; 
+}
+.sister h2{
+    margin: 0px;
+    font-family: var(--door-font);
+    font-size:16px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: -0.01px;
+}
+.vanner{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4px;
+}
+.stair2{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+br{
+    display: none;
+}
+.vanner div:not(:first-child){
+    white-space: nowrap;
+    padding: 0px;
+    margin-left: 12px;
+}
+.vanner div{
+    display: flex;
+}
+.polite .select{
+    position: relative;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+.select select{
+    border: 1px solid white;
+    color: #191919; 
+    overflow: hidden; 
+    font-family: var(--door-fmedian); 
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    letter-spacing: -0.01px;
+    border-radius: 90px;
+}
+footer .vanner2{
+    background-color: white;
+    color:#191919;
+    border-radius:20px;
+    height: 32px;
+    margin: 12px;
+    width: 150px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.globe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 4px;
+    margin-left: 11.5px;
+}
+.vans{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 12px;
+    width: 126px;
+    overflow: hidden;
+}
+.sister ul{
+    margin: 0px;
+    padding: 0px;
+}
+.sister ul li{
+    margin-top: 8px;
+}
+.sister h2{
+    padding: 0px 8px 8px;
+}
+.newy{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(8,1fr);
+    grid-gap:0px;
+    padding: 0px;
+    width: 100%;
+}
+.newy li{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    color: #191919;
+    max-width: 100%;
+    min-height: 40px;
+    align-items: center;
+    justify-content: center;
+    box-sizing:border-box;
+}
+.newer{
+    margin-bottom: 30px;
+}
+
+
+
+.icons{
+    background-color: none;
+    color: white;
+    font-family: var(--door-font);
+    display:none;
+    align-items: center;
+    justify-content: center;
+    margin-right: 24px;
+    margin-top: 16px;
+}
+.icons div{
+    height:40px;
+    border-radius: 99px;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 700;
+}
+
+.hide_2{
+    display: none;
+}
+
+.path{
+    max-width: 100%;
+}
+
+@media screen and (min-width:417px){
+    .stair2 {
+        display: flex;
+        flex-direction: row;
+    }
+    .stair2 .step{
+        padding-left: 16px;
+    }
+    .hide{
+        display: none;
+    }
+    .hide_2{  
+        display: flex;
+        width: 318px;
+    }
+    .banner{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .one1{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .two2{
+        margin-top: 120px;
+    }
+    #bbb{
+        padding: 2px 8px;
+    }
+    #bbb2{
+        padding: 2px 8px;
+    }
+}
+
+@media screen and (min-width:610px) {
+    .stair{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .polite .phone{
+        margin: 0px 0px 12px;
+        padding: 0px;
+    }
+    .phone div{
+        padding: 8px 0px 0px;
+    }
+    .polite .blackier{
+        padding-top: 0px;
+        width: 100%;
+    }
+    .blackier #black-h2{
+        padding: 0px 0px 7.5px 0px;
+    }
+    #joker #three{
+        margin-bottom: 10px;
+    }
+    #bbb{
+        margin-top: 8px;
+    }
+    .ring{
+        padding-top: 1px;
+    }
+    #bbb2{
+        margin-top: 10px;
+        padding: 0px;
+    }
+    .polite .sis{
+        padding-top: 0px;
+        justify-content: space-between;
+        gap: 12px;
+    }
+    #queen{
+        padding-bottom: 3px;
+    }
+    #joker #three{
+        padding-bottom: 5px;
+        padding-top: 1px;
+    }
+
+    #joker h2{
+        padding: 0px 0px 8px;
+    }
+    .vanner{
+        margin-bottom: 3px;
+        height: 28px;
+        margin-top: 0px;
+        margin-left: 1px;
+    }
+    .steppy{
+        margin-top: -1px;
+    }
+    .polite .sis{
+        padding-bottom: 3px;
+    }
+    #joker h2{
+        margin-bottom: 0px;
+        padding-bottom: 8.5px;
+    }
+    .black .sister{
+        padding-top: 11px;
+    }
+    #bbb svg,#bbb2 svg{
+        padding: 2px 8px;
+        color: #f0f0f0;
+    }
+    .step{
+        display: none;
+    }
+    .leg .steppy{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color:#c4c4c4;
+        margin-left: 16px;
+    }
+    .kind h2{
+        margin-top: 0px;
+    }
+    .polite .kind{
+        padding-top: 0px;
+    }
+    .next{
+        margin-bottom: 2.4px;
+    }
+    .polite .please{
+        padding: 0px;
+    }
+
+    .polite .newy{
+        margin: 18px 0px;
+    }
+    .please div{
+        padding: 0px;
+        height: 38.4px;
+    }
+    .polite .newer{
+        padding-top: 0px;
+        margin-bottom: 25px;
+    }
+    .shoe{
+        margin-top: 0px;
+    }
+    footer .vanner2{
+        margin: 0px 0px 12px;
+    }
+    .sister h2{
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 22px;
+        letter-spacing: -0.01px;
+        color: #ffffff;
+        font-family: var(--door-fmedian);
+    }
+}
+
+@media screen and (min-width:726px) {
+    .two2{
+        margin-top: 100px;
+    }
+    #aleena{
+        padding-left: 20px;
+    }
+    .stair{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .stair2{
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .step{
+        padding-left: 10px;
+        display: flex;
+    }
+    .leg .steppy{
+        display: none;
+    }
+    footer{
+        padding-bottom: 31px;
+    }
+
+
+}
+
+@media screen and (min-width:768px) {
+    .favicon_one{
+        display: none;
+    }
+    .vanner {
+        margin-bottom: 5px;
+    }
+
+    .hide_2{
+        display: none;
+    }
+    .doordash_body{
+        width: 100%;
+    }
+    .flex div img{
+        height: 124px;
+        width: 124px;
+    }
+    .flex{
+        max-width:470px;
+    }
+    .flex h3{
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 24px;
+        font-family: var(--door-fmedian);
+        width: 250px;
+    }
+    .pants{
+        display: flex;
+        flex-direction: column;
+    }
+    .cherries span{
+        margin-top: 20px;
+    }
+    #bbb2{
+        display: flex;
+        padding-top: 0px;
+    }
+    #bbb2 svg{
+        padding: 2px 8px;
+    }
+    #bbb svg{
+        padding: 2px 8px;
+    }
+    #bbb{   
+        padding-top: 0px;
+    }
+    .two2{
+        margin-top: 432px;
+        padding-top: 337px;
+        position: relative;
+        max-width: 100%;
+    }
+    .first .flex{
+        padding: 16px;
+        margin: 0px;
+        box-sizing: border-box;
+    }
+    .flex-wrap div p{
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 22px;
+        letter-spacing: -0.01px;
+    }
+    .first{
+        padding: 8px;
+        margin:32px 0px;
+        width:470px;
+    }
+    .tab{
+        display: flex;
+        z-index: 2;
+    }
+    .one1{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .uio{
+        padding: 20px;
+    }
+    #top_door1{
+        margin-top: -32px;
+        width: 32px;
+        height: 18px;
+    }
+    #top_door2{
+        margin-top: -114.5px;
+        width: 112px;
+        height: 183px;
+        margin-right: 9.1px;
+    }
+    .cherries{
+        height:600px;
+        position: relative;
+    }
+    .cherries h2{
+        font-size:40px;
+        line-height:40px;
+    }
+    .blackier #black-h2 {
+        padding: 0px 0px 8px 0px;
+    }
+    main .doordash_top{
+        top:0;
+        display: flex;
+    }
+    .shoe{
+        justify-content: center;
+        align-items: center;
+        margin: 0px;
+    }
+    .flex .mobster p{
+        padding: 0px;
+        margin-top: 20px;
+    }
+    .red{
+        height: 40px;
+        margin-top: 30px;
+    }
+    .red2{
+        margin-top: 30px;
+        height: 40px;
+    }
+    .red2 span{
+        font-size: 16px;
+        font-family: var(--door-font);
+    }
+    .uio .mobster{
+        padding: 0px;
+        box-sizing: border-box;
+        text-align: center;
+    }
+    .monk2 .add4{
+        margin-right: 0px;
+    }
+    .monk2 .add3{
+        margin-left:0px;
+    }
+    .monk .add6{
+        margin-right: 0px;
+    }
+    .monk .add5{
+        margin-left:0px;
+    }
+    #amia{
+        width: 360px;
+    }
+    .polite .kind h2{
+        margin-top: 0px;
+        margin-bottom: 19px;
+    }
+    .polite .kind{
+        padding: 0px;
+    }
+    .polite{
+        margin:48px 0px 0px;
+    }
+    .color2 .specs{
+        gap: 60px;
+    }
+    .help{
+        padding: 40px 20px;
+    }
+    .color{
+        width: 100%;
+        margin-top: -170px;
+    }
+    .mink{
+        display:flex;
+        flex-direction: row-reverse;
+        margin-top: -800px;
+        column-gap: 60px;
+        height: 100%;
+    }
+    .mink2{
+        display:flex;
+        flex-direction: row;
+        column-gap: 60px;
+        width: 100%;
+        margin-top: -40px;
+        padding-top: 40px;
+        background-color:transparent;
+    }
+    .mink.crave{
+        margin-top: 0px;
+    }
+    .vanner{
+        margin: 0px;
+    }
+    .vanner div:not(:first-child){
+        margin-left: 12px;
+    }
+    footer .vanner2{
+        margin: 0px 12px 3px 12px;
+    }
+    #flow{
+        background-color: transparent;
+    }
+    .color2{
+    margin-top: 480px;
+    }
+    .add{
+        display: flex;
+        justify-content: center;
+    }
+    .monk{
+        margin-top: -480px;
+        display:flex;
+        flex-direction: row-reverse;
+        gap:20px;
+    }
+    .monk img{
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+    }
+    .add .aria p{
+        margin-top:20px
+    }
+    .polite .black{
+        justify-content: left;
+        width: 100%;
+    }
+    .monk2{
+        display:flex;
+        flex-direction: row;
+    }
+    .aria{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 383px;
+    }
+    .monk2 img{
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+    }
+    .blackberry .span{
+        width: 550px;
+    }
+    .blackberry p{
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 22px;
+        letter-spacing: -0.01px;
+        font-family: var(--door-fmedian);
+    }
+    .stair{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .stair2{
+        flex-direction: row;
+    }
+    .two3{
+        margin-top: 680px;
+    }
+    .cherry{
+        margin: 30px 0px 0px 0px;
+        flex-grow: 2;
+        min-height: 40px;
+    }
+    .cherry p{
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 22px;
+        letter-spacing: -0.01px;
+        font-family: var(--door-font);
+        margin-top: 0px;
+        margin-bottom: 1px;
+    }
+    #plastic{
+        padding:0px;
+    }
+    #glass{
+        display: none;
+    }
+    .search_two #location{
+        display: flex;
+    }
+    #one01{
+        margin-top: 20px;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 40px;
+    }
+    #two01{
+        padding: 0px;
+    }
+    .search_two{
+        width: 408px;
+        min-height: 52px;
+        border-color: blue;
+        padding: 8px 8px 8px 20px;
+        height: 56px;
+    }
+    .blank{
+        flex-grow: 1;
+    }
+    .menu_items{
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+    .flex-wrap{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);   
+    }
+    .flex-wrap img{
+        width: 344px;
+        height: 344px;
+        min-height: 100%;
+    }
+    .help{
+        font-size: 32px;
+        line-height: 40px; 
+        letter-spacing: -0.01px;
+        max-width: 500px;
+        margin-top: 20px;
+    }
+    .flex-wrap div{
+        scroll-snap-align: none;
+        margin: 0px;
+        min-width: 50%;
+        object-position: center center;
+        object-fit: cover;
+    }
+    #yhn{
+        text-align: center;
+        margin: 20px 0px 0px 0px;
+        font-size:40px;
+        font-weight: 700;
+        line-height: 40px;
+        letter-spacing: -0.01px;
+        font-family: var(--door-font);
+        width: 309px;
+    }
+    .icons{
+        right: 0;
+        display:flex;
+    }
+    .sign_1,.sign_2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        border-radius: 90px;
+    }
+    .sign_2 span{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        border-radius: 90px;
+        padding: 0px 12px;
+    }
+    .sign_1 span{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        border-radius: 90px;
+        padding: 0px 12px;
+    }
+    .sign_1{
+        background-color: var(--door-color);
+        color: white;
+    }
+    .sign_2{
+        background-color: white;
+        color: #606060;
+        margin-left:8px;
+    }
+    .hide{
+        display: none;
+    }
+    .log_in{
+        display:none;
+    }
+    .cherries .rose span{
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .small_nav{
+        display: none;
+    }
+    .flex{
+        padding: 0px;
+    }
+    .flexer{
+        margin:107px 0px;
+        background-color: white;
+        justify-content: center;
+    }   
+    .flexer h2{
+        margin-top: 20px;
+        font-size:40px;
+        line-height:40px ;
+    }
+    .flexer span{
+        margin-top: 20px;
+        font-size:20px;
+        line-height:24px ; 
+    }
+    .flexer p{
+        margin-top: 20px;
+        font-size:16px;
+        line-height:22px ; 
+        letter-spacing: -0.01px;
+    }
+    .mink2 .flexer h2{
+        margin-top: 60px;
+    }
+    #qwer span{
+        margin-top: 6px;
+    }
+    .flexer div span{
+        display:inline-flex;
+        font-size:16px;
+        line-height:22px;
+        letter-spacing:-0.01px;
+        padding: 0px 12px;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+    }
+    .link div{
+        margin-top: 30px;
+    }
+    .mobile{
+        display: none;
+    }
+    .phone{
+        flex-grow: 1;
+        width: 100%;
+    }
+    .polite #black-ul{
+        gap: 12px;
+        margin-bottom: 15px;
+    }
+    #joker #three {
+        padding:0px;
+        margin-bottom: 16px;
+        padding-bottom: 0.5px;
+    }
+    .crave{
+        width: 100%;
+        box-sizing: border-box;
+        display: block;
+    }
+    .crave #up{
+        margin: 0px;
+        height: 100%;
+    }
+    .crave img{
+        height: 500px;
+        width:100%; 
+        overflow: clip;
+        object-fit: cover;
+        object-position: center;
+    }
+    #flexer{
+        margin: 107px 0px;
+        background-color: transparent;
+    }
+    .crave2{
+        height: 100%;
+        box-sizing: border-box;
+        display: block;
+    }
+    .crave2 img{
+        height: 500px;
+        width:100%; 
+        overflow: clip;
+        object-fit: cover;
+        object-position: center;
+    }
+    .bale{
+        margin:0px;
+        display: flex;
+        justify-content: center;
+    }
+    .bale p{
+        margin-top:20px;
+    }
+    .bale span{
+        margin-top: 0px;
+    }
+    .ttwwoo{
+        display: flex;
+    }
+    #upp{
+        margin: 0px;
+        height: 100%;
+    }
+    .title{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .title h1{
+        margin-bottom: 0px;
+        margin-top: 60px;
+    }
+    h1{
+        color: #191919ff;
+        font-size: 32px;
+        font-family: var(--door-font);
+        font-weight: 700;
+        line-height: 40px;
+        letter-spacing: -0.01px;
+        width: 500px;
+        text-align: center;
+    }
+    .add h2{
+        width: 90%;
+        margin-top: 20px;
+        font-size: 40px;
+        line-height: 40px;
+        letter-spacing: -0.01px;
+        font-weight: 700;
+        font-family: var(--door-font);
+    }
+    .add div p{
+        margin-top: 20px;
+        margin: 0px;
+        font-size:16px ;
+        line-height: 22px;
+    }
+    .add div.red {
+        margin-top: 30px;
+    } 
+    .flex-wrap div span{
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: -0.01px;
+        font-family: var(--door-fmedian);
+    }
+    .flex-wrap .red span{
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 22px;
+        letter-spacing: -0.01px;
+        font-family: var(--door-font);
+    }
+    .polite h2{
+        font-size: 32px;
+        line-height: 40px;
+        text-align: center;
+        letter-spacing: -0.01px;
+    }
+    .newer .newy{
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(5,1fr);
+    }
+    #aleena{
+        margin-bottom: 8px;
+        margin: 0px;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: -0.01px;
+        text-align: left;
+        flex-grow: 0;
+    }
+    .black{
+        flex-direction: column;
+    }
+    .polite #black-ul{
+        flex-direction: row;
+        text-align: left;
+        padding: 0px 20px;
+        max-width:100%;
+    }
+    #black-ul .phone{
+        padding: 0px 0px 20px 0px;
+    }
+    .polite .please div{
+        justify-content: center;
+    }
+    .polite div{
+        justify-content: left;
+    }
+    #black-h2{
+        display:flex;
+        max-width: 100%;
+        padding-left: 20px;
+        justify-content: left;
+        margin-top: 27px;
+    }
+    .polite div br{
+        display: block;
+    }
+    #black-ul .phone br{
+        display: none;
+    }
+    .black .sis{
+        display: flex;
+        flex-direction: row;
+        padding: 0px 20px;
+        padding-top: 21px;
+        text-align: left;
+        width: 100%;
+        justify-content: space-between;
+        box-sizing: border-box;
+        gap: 12px;
+    }
+    .sis h2{
+        padding: 0px;
+        margin-bottom: 16px;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: -0.01px;
+        padding-bottom: 0.5px;
+        text-align: left;
+        font-family: var(--door-fmedian);
+    }
+    .black .sister{    
+        text-align: left;
+        padding-bottom: 2px;
+    }
+    .doordash_body{
+        height: 650px;
+    }
+    .discover h1{
+        font-size:22px;
+        max-width: 750px;
+        line-height: 28px;
+        letter-spacing: -0.01px;
+        box-sizing: border-box;
+        width: 350px;
+    }
+    .section_1{
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -80px;
+    }
+    .doordash_main{
+        flex-grow: 0;
+    }
+    #in{
+        display: flex;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 20px;
+        font-family: var(--door-font);
+        padding-left: 1px;
+        margin-top: 1px;
+    }
+    #signin{
+        display: none;
+    }
+    .p,#set,#location{
+        margin-top: 1px;
+    }
+
+
+    footer{
+        flex-direction: row-reverse;
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 32px 20px 32px;
+        flex-grow: 1;
+        height: 36px;
+        margin-top: -3px;
+    }
+
+    .leg{
+        flex-direction: row-reverse;
+        justify-content: flex-start;
+        width: 100%;
+        padding-bottom: 1px;
+        margin-top: 0px;
+    }
+    .pink{
+        z-index: 3;
+    }
+
+    .stair{
+        height: 36px;
+        padding: 0px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .vanner{
+        padding: 0px;
+        margin-bottom: 11px;
+        opacity: 0.8;
+    }
+    .vanner2{
+        flex-grow: 0;
+    }
+    .path{
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+    .polite .skirt{
+        padding-bottom: 0px;
+    }
+    .polite .grey{
+        padding-bottom: 0px;
+    }
+    #share{
+        margin: 0px;
+        margin-top: -1px;
+        position: relative;
+    }
+    #share p{
+        margin-left: 16px;
+    }
+    footer .stair2{
+        margin-top: -2px;
+    }
+
+}
+
+@media screen and (min-width:769px){
+
+    .discover h1{
+        font-family: var(--door-font);
+        font-size: 40px;
+        box-sizing: border-box;
+        font-weight: 700;
+        line-height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        letter-spacing: -0.01px;
+        max-width: 750px;
+        white-space: nowrap;
+    }
+
+}
+    
+    
+@media screen and (min-width:879px){
+    .leg{
+        max-width: 100%;
+        flex-direction: row-reverse;
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+    }
+    #in{
+        display: flex;
+    }
+    .pink{
+        margin-top: 0px;
+    }
+    .steppy{
+        display: block;
+    }
+    .leg .step{
+        display: none;
+    }
+    .stair{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1px;
+    }
+    #share,.shoe{
+        margin: 0px;
+    }
+    #black-ul .phone br{
+        display: none;
+    }
+    .vanner{
+        flex-wrap: nowrap;
+        padding: 0px;
+        margin: 0px;
+        display: flex;
+        justify-content: center;
+    }
+    .leg .steppy{
+        display: block;
+    }
+    .path{
+        flex-direction: column;
+        align-items: center;
+        height: 36px;
+    }
+}
+
+
+@media screen and (min-width:960px){
+    main .doordash_top_2{
+        top:0;
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+    .section_1{
+        margin-top: 2.15px;
+    }
+    #top_desktop_1{
+        margin-top: -3px;
+    }
+    #top_desktop_2{
+        padding-left:10px;
+    }
+    main .doordash_top{
+        display: none;
+    }
+    .blank1{
+        flex-grow: 0.5;
+    }
+    #yhn{
+        width: 90%;
+    }
+    .flex-wrap div p{
+        width:100% ;
+    }
+    .flex-wrap .uio .screen{
+        width: 100%;
+    }
+    .flex-wrap .uio div {
+        width: 100%;
+    }
+    .flex-wrap img{
+        width: 100%;
+        height: 100%;
+    }
+    .newer .newy {
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+    .polite .pants{
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        box-sizing: border-box;
+        align-items: center;
+        right: 0;
+    }
+    .polite .sis{
+        width:100%;
+        box-sizing: border-box;
+        padding: 0px;
+        gap: 12px;
+    }
+    .polite .skirt{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        padding: 0px 20px;
+        box-sizing: border-box;
+    }
+    #bbb,#bbb2{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+    footer{
+        margin: 0px;
+        position: relative;
+        padding: 28px 20px 32px;
+    }
+
+}
+
+.steppy{display: none;}
+
+
+@media screen and (min-width:996px){
+    .leg {
+        width: 100%;
+        flex-direction: row-reverse;
+        display: flex;
+        justify-content: space-between;
+        height: 32px;
+    }
+    footer{
+        padding: 26px 20px 32px;
+    }
+    .leg .steppy{
+        display: none;
+    }
+    .leg .step{
+        display: flex;
+    }
+    .path{
+        justify-content: center;
+        max-width: fit-content;
+        align-items: center;
+    }
+    .stair{
+        justify-content: flex-start;
+        max-width: 100%;
+    }
+    footer .vanner2{
+        display: flex;
+        justify-content: center;
+        margin: 0px;
+    } 
+    .horse div{
+        box-sizing: border-box;
+    }
+}
+
+@media screen and (min-width:1184px){  
+    .search_two #set{
+        display: flex;
+        background-color: var(--door-color);
+        width: 40px;
+        height: 40px;
+        border-radius: 90px;
+        box-sizing: border-box;
+        align-items: center;
+        justify-content: center;
+        margin-right: 0px;
+    }
+    .eve{
+        width: 264px;
+        display: flex;
+        justify-content: center;
+        margin-right: 64px;
+        box-sizing: border-box;
+        cursor: pointer;
+        position: relative;
+    }
+    .polite .skirt{
+        display: flex;
+        padding-top: 0px;
+        flex-direction: row-reverse;
+    }
+    .set{
+        box-sizing: border-box;
+    }
+    #set svg{
+        fill:white;
+        height: 24px;
+        width:24px;
+        box-sizing: border-box;
+    }
+    .max,.min{
+        margin-top: 10px;
+        margin-right: 5px;
+    }
+
+    .flex .min img{
+        margin-top: 10px;
+    }
+    .first{
+        display: flex;
+        flex-direction: row;
+        margin: 96px 0px 100px 0px;
+        padding: 12px;
+        justify-content: center;
+        max-width: 100%;
+    }
+    .first .flex{
+        flex-direction: column;
+        justify-content: center;
+        align-items: baseline;
+        text-align: center;
+        display: flex;
+        box-sizing: border-box;
+        height: 100%;
+        width: 100%;
+        min-width: 328px;
+        column-gap: 64px;
+        box-sizing: border-box;
+    }
+    .flex h2{
+        font-family: var(--door-font);
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 40px;
+        margin: 0px;
+        text-align: center;
+        max-width: 250px;
+    }
+    .first #F1,#spacer{
+        margin-bottom: 60px;
+    }
+    .doordash_body{
+        background-image: url(https://img.cdn4dd.com/cdn-cgi/image/fit=cover,format=auto,quality=60/https://cdn.doordash.com/managed/consumer/seo/home/hero_v3/hero_desktop.png);
+    }
+    .flex div img{
+        height: 154px;
+        width: 154px;
+        box-sizing: border-box;
+    }
+    .one1{
+        width: 100%;
+    }
+    
+    .flex h3{
+        text-align: center;
+        max-width: 250px;
+        font-size: 18px;
+        font-family: var(--door-fmedian);
+        margin-top: 8px;
+    }
+    .flex .start{
+        justify-content: center;
+        align-items: center;
+    }
+    .flex span{
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 22px;
+        font-family: var(--door-font);
+        margin-top: 12px;
+    }
+
+    .flexer{
+        max-width: 400px;
+    }
+    #black-h2{
+        padding-left: 0px;
+    }
+    .color2 {
+        margin-top: 480px;
+    }
+    #qwer{
+        padding: 0px;
+        margin-top: 10px;
+    }
+    .flex-wrap div span{
+        margin-top: 20px;
+    }
+    .search_two #set{
+        display: flex;
+        background-color: var(--door-color);
+        width: 40px;
+        height: 40px;
+        border-radius: 90px;
+        box-sizing: border-box;
+        align-items: center;
+        justify-content: center;
+        margin-right: 0px;
+    }
+    .start div{
+        margin-top: 12px;
+    }
+    #von{
+        margin-right: 55px;
+        padding: 20px;
+    }
+
+    .polite #black-ul{
+        padding: 0px 32px;
+    }
+    #aleena{
+        padding-left: 32px;
+    }
+    .polite .skirt{
+        padding: 0px 32px;
+        width: 1340px;
+        display: flex;
+        justify-content: center;
+    }
+
+    footer {
+        padding: 28px 30px 28px 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer .vanner2{
+        max-width: 100%;
+        display: flex;
+    }
+    .polite .blackier{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .polite .blackier #black-ul{
+        width: 1184px;
+        box-sizing: border-box;
+        margin-bottom: 0px;
+    }
+    .polite .blackier #black-h2{
+        width: 1184px;
+        box-sizing: border-box;
+    }
+    .polite .skirt{
+        width: 1184px;
+        box-sizing: border-box;
+    }
+    .polite .grey {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .leg{
+        width: 1184px;
+        box-sizing: border-box;
+    } 
+    .polite{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .polite .please{
+        justify-content: center;
+        max-width: 100%;
+        padding: 0px;
+        height: 40px;
+    }
+    .search_two{
+        max-width: 408px;
+        min-height: 52px;
+        min-width: 380px;
+        border-color: blue;
+        padding: 8px 8px 8px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .p{
+        max-width: 100%;
+    }
+    .search_two .blank{
+        flex-grow: 20;
+    }
+    .flex .start{
+        justify-content: center;
+        align-items: center;
+    }
+    .flex span{
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 22px;
+        font-family: var(--door-font);
+        margin-top: 12px;
+    }
+    .crave img{
+        height: 500px;
+        max-width: 100%;
+    }
+    #bbb{
+        display: flex;
+        justify-self: right;
+        justify-content: right;
+        align-self: center;
+        margin-top: 0px;
+    }
+    #bbb2{
+        justify-self: right;
+        align-self: center;
+        justify-content: right;
+        display: flex;
+    }
+    .mink,.mink2,.flex-wrap,.monk,.monk2,#black-h2{
+        max-width: 1184px;
+    }
+    .black{
+        align-items: center;
+        justify-content: center;
+    }
+    .vanner div{
+        display: block;
+    }
+    .vanner{
+        margin-right: 0px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: nowrap;
+        margin-top:3px;
+    }
+    .black .sis{
+        row-gap: 12px;
+        width: 50%;
+        padding-left: 5px;
+        padding: 0px;
+
+    }
+    .black .sister{
+        padding: 0px;
+    }
+    .skirt{
+        display: flex;
+        flex-direction: row-reverse;
+        width: 100%;
+    }
+    .please,.newer{
+        max-width: 1184px;
+        justify-self: center;
+        justify-content: center;
+    }
+    #black-ul{
+        max-width: 100%;
+        display: flex;
+        flex-direction:row;
+        justify-content: space-between;
+        column-gap: 12px;
+    }
+    .grey{
+        width:1130px;
+        align-items: center;
+        justify-content: center;
+    }
+    #share.step{
+        display: block;
+        margin-bottom: -1px;
+    }
+    .screen img{
+        width: 552px;
+        height: 552px;
+    }
+    .monk .add img{
+        height: 500px;
+        width: 100%;
+        object-fit: cover;
+    }
+    .monk,.monk2{
+        gap:20px;
+    }
+    #add1{
+        width: 100%;
+    }
+    #add2{
+        max-width: 400px;
+    }
+    br{
+        display: block;
+    }
+    .aria h2{
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 40px;
+        letter-spacing: -0.01px;
+        font-family: var(--door-font);
+        color: #191919;
+    }
+    .doordash_top_2 #top_desktop_2{
+        margin-top: -29px;
+        padding-left: 12px;
+    }
+    .doordash_top_2 #top_desktop_1{
+        margin-top: -32px;
+    }
+
+    #black-ul .phone{
+        padding: 0px;
+    }
+    .section_1{
+        flex-grow: 1.02;
+        width: 100%;
+    }
+    #black-ul{
+        display: flex;
+        justify-content: center;
+    }
+    .search_up{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+    }
+    .kind{
+        width:1130px;
+        justify-items: center;
+    }
+    .polite .skirt{
+        display: flex;
+        padding-top: 0px;
+        flex-direction: row-reverse;
+    }
+    .set{
+        box-sizing: border-box;
+    }
+    .leg{
+        width: 100%;
+        justify-content: space-between;
+        display: flex;
+        max-width: 1184px;
+        padding: 0px 32px;
+    }
+    .add .aria p{
+        min-width:400px;
+    }
+    #yhn{
+        width: 100%;
+    }
+    .flex-wrap div p {
+        width: 100%;
+    }
+    .phone div br{
+        display: none;
+    }
+    .search_two div p {
+        margin-top: 2px;
+    }
+    .leg .steppy{
+        display: none;
+    }
+    .first #F1,#spacer{
+        margin-bottom: 60px;
+    }
+    #set svg{
+        fill:white;
+        height: 24px;
+        width:24px;
+        box-sizing: border-box;
+    }
+    .polite .pants{
+        width: 50%;
+        display: flex;
+    }
+    .sis{
+        width: 50%;
+    }
+    .flex div img {
+        height: 154px;
+        width: 154px;
+    }
+    .polite #black-ul {
+        flex-direction: row;
+        text-align: left;
+        width: 100%;
+        padding: 0px 32px 46.5px;
+        margin-bottom: 0p;
+    }  
+    .newer{
+        margin-bottom: 27px;
+    }
+    .blackier{
+        width: 100%;
+        padding-bottom: 0px;
+    }
+    .polite .grey{
+        width: 1184px;
+    }
+    .please div{
+        padding: 0px;
+    }
+    .phone br{
+        display: none;
+    }
+    .stair{
+        padding: 0px;
+        margin-left: -4px;
+    }
+    .stair .shoe{
+        padding-left: 2px;
+    }
+    .step{
+        padding-left: 16px;
+    }
+    .serc #login{
+        display: flex;
+        font-size: 14px;
+        margin-left: 4px;
+        margin-top: 2px;
+    }
+    #in{
+        display: none;
+    }
+    .horse{
+        margin-right: 15px;
+        max-width: 250px;
+        box-sizing: border-box;
+    }
+    .start{
+        margin-top: 0px;
+    }
+    .first .flex img{
+        /* margin-bottom: -5px; */
+        box-sizing: border-box;
+        /* margin-right: 64px; */
+    }
+} 
+
+@media screen and (min-width:1164px){
+    .polite #black-ul {
+        padding: 0px 22px;
+    }
+
+    .polite .skirt {
+        padding: 0px 22px;
+    }
+
+    footer {
+        padding: 32px 22px 33px;
+    }
+}
+
+
+@media screen and (min-width:1169px){
+    .polite #black-ul {
+        padding: 0px 25px;
+    }
+
+    .polite .skirt {
+        padding: 0px 25px;
+    }
+
+    footer {
+        padding: 32px 25px 33px;
+    }
+}
+
+
+@media screen and (min-width:1172px){
+    .polite #black-ul {
+        padding: 0px 26px;
+    }
+
+    .polite .skirt {
+        padding: 0px 26px;
+    }
+
+    footer {
+        padding: 32px 25px 33px;
+    }
+}
+
+@media screen and (min-width:1180px){
+    .polite #black-ul {
+        padding: 0px 30px;
+    }
+
+    .polite .skirt {
+        padding: 0px 32px;
+        width: 1184px;
+        box-sizing: border-box;
+    }
+
+    footer {
+        padding: 25px 30px 32px;
+    }
+}
+
+@media screen and (max-width:380px){
+    .first{
+        max-width: 100%;
+    }
+}
